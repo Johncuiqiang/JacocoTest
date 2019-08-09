@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnGenerate = findViewById(R.id.btn_generate);
         Test test = new Test();
         test.onTest();
+        initTest1();
     }
 
     private void initData() {
@@ -47,6 +48,17 @@ public class MainActivity extends AppCompatActivity {
                   JacocoHelper.generateEcFile(true);
             }
         });
+    }
+
+
+    private void initTest1(){
+        Test2 test = new Test2();
+        test.onTest();
+    }
+
+    private void initTest2(){
+        Test2 test = new Test2();
+        test.onTest();
     }
 
 
